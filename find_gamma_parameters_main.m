@@ -12,8 +12,7 @@ d = 50 ; % -> the distance between Tx and Rx in meters
 d_v = 5 ; % -> the vertical distance between Tx and RIS in meters
 d_h = 5 ; % -> the horizontal distance between Tx and RIS in meters
 
-[scale_param, shape_param] = find_gamma_parameters(L, N, P_max_dBm, ...
-    P_t_dBm, G_max_dB, n_amp_dBm, n_rx_dBm, NF, fc, K, d, d_v, d_h) ;
+[scale_param, shape_param] = find_gamma_parameters(L, N, P_max_dBm, P_t_dBm, G_max_dB, n_amp_dBm, n_rx_dBm, NF, fc, K, d, d_v, d_h) ;
 
 function [scale_param, shape_param] = find_gamma_parameters(L, N, P_max_dBm, P_t_dBm, G_max_dB, n_amp_dBm, n_rx_dBm, NF, fc, K, d, d_v, d_h)
 %{
